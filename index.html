@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>المركز المحاسبي التعليمي</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, Tahoma, sans-serif;
+      background: #f6f8fb;
+      color: #1f2937;
+      line-height: 1.8;
+      direction: rtl;
+    }
+    a { text-decoration: none; }
+    .container { width: min(1100px, 92%); margin: auto; }
+    header {
+      background: linear-gradient(135deg, #0f172a, #1d4ed8);
+      color: white; padding: 18px 0; position: sticky; top: 0; z-index: 10;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
+    .logo { font-size: 1.3rem; font-weight: 700; }
+    .menu { display: flex; gap: 18px; flex-wrap: wrap; }
+    .menu a { color: white; opacity: 0.95; font-weight: 600; }
+    .hero { padding: 80px 0 50px; background: linear-gradient(180deg, #eaf1ff 0%, #f6f8fb 100%); }
+    .hero-box { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 28px; align-items: center; }
+    .hero h1 { margin: 0 0 14px; font-size: clamp(2rem, 4vw, 3.2rem); line-height: 1.3; color: #0f172a; }
+    .hero p { font-size: 1.05rem; margin: 0 0 24px; color: #334155; }
+    .actions { display: flex; gap: 12px; flex-wrap: wrap; }
+    .btn { display: inline-block; padding: 12px 22px; border-radius: 12px; font-weight: 700; transition: 0.25s ease; }
+    .btn-primary { background: #1d4ed8; color: white; }
+    .btn-primary:hover { background: #1e40af; }
+    .btn-secondary { background: white; color: #1d4ed8; border: 1px solid #cbd5e1; }
+    .card-hero, .card, .about-box {
+      background: white; border-radius: 20px; padding: 24px;
+      box-shadow: 0 10px 30px rgba(2,6,23,0.06); border: 1px solid #e5e7eb;
+    }
+    .badge { display: inline-block; background: #dbeafe; color: #1d4ed8; padding: 6px 12px; border-radius: 999px; font-size: 0.9rem; font-weight: 700; margin-bottom: 12px; }
+    section { padding: 65px 0; }
+    .section-title { text-align: center; margin-bottom: 30px; }
+    .section-title h2 { margin: 0 0 10px; font-size: 2rem; color: #0f172a; }
+    .section-title p { margin: 0; color: #64748b; }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+    .card h3 { margin-top: 0; color: #0f172a; }
+    .contact {
+      background: #0f172a; color: white; border-radius: 26px; padding: 36px; text-align: center;
+    }
+    .contact p { color: #cbd5e1; }
+    footer { text-align: center; padding: 24px 0 36px; color: #64748b; font-size: 0.95rem; }
+    @media (max-width: 900px) {
+      .hero-box, .grid-3 { grid-template-columns: 1fr; }
+      .hero { padding-top: 50px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container nav">
+      <div class="logo">المركز المحاسبي التعليمي</div>
+      <nav class="menu">
+        <a href="#home">الرئيسية</a>
+        <a href="#services">الخدمات المحاسبية</a>
+        <a href="#courses">الدورات</a>
+        <a href="#contact">تواصل معنا</a>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="home">
+      <div class="container hero-box">
+        <div>
+          <span class="badge">خدمات محاسبية ودورات احترافية</span>
+          <h1>خدمات محاسبية احترافية ودورات تعليمية متخصصة</h1>
+          <p>نقدم من خلال هذا الموقع خدمات محاسبية متخصصة للأفراد والمنشآت، إلى جانب دورات تعليمية عملية في المحاسبة والتحليل المالي والإكسل والإحصاء، بأسلوب واضح ومهني يساعد العميل والطالب على الوصول إلى نتائج حقيقية.</p>
+          <div class="actions">
+            <a class="btn btn-primary" href="#contact">احجز الآن</a>
+            <a class="btn btn-secondary" href="#courses">استعراض الدورات</a>
+          </div>
+        </div>
+        <div class="card-hero">
+          <h3>ما الذي يميز خدماتنا؟</h3>
+          <p>نقدّم مزيجًا قويًا بين الخدمات المحاسبية المهنية والتدريب العملي الموجّه لسوق العمل.</p>
+          <ul>
+            <li>خدمات مالية ومحاسبية دقيقة</li>
+            <li>دورات عملية مبسطة ومركزة</li>
+            <li>تواصل مباشر وسريع عبر الواتساب والبريد</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section id="services">
+      <div class="container">
+        <div class="section-title">
+          <h2>الخدمات المحاسبية</h2>
+          <p>هذه أبرز الخدمات التي نقدمها للعملاء في المجال المحاسبي والمالي.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>إعداد القوائم المالية</h3>
+            <p>إعداد قائمة الدخل، قائمة المركز المالي، قائمة التدفقات النقدية، والتقارير المالية بدقة واحتراف.</p>
+          </div>
+          <div class="card">
+            <h3>التحليل المالي</h3>
+            <p>تحليل الأداء المالي، دراسة المؤشرات والنسب، واستخراج نقاط القوة والضعف لدعم القرارات المالية.</p>
+          </div>
+          <div class="card">
+            <h3>مسك الدفاتر والتقارير</h3>
+            <p>تنظيم القيود اليومية، الترحيل، إعداد ميزان المراجعة، وتجهيز التقارير الدورية للمشاريع والمنشآت.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="courses">
+      <div class="container">
+        <div class="section-title">
+          <h2>الدورات التعليمية</h2>
+          <p>برامج تدريبية عملية ومناسبة للطلاب والباحثين عن تطوير مهاراتهم المهنية.</p>
+        </div>
+        <div class="grid-3">
+          <div class="card">
+            <h3>دورة المحاسبة المالية</h3>
+            <p>شرح عملي ومبسط لأساسيات المحاسبة المالية مع أمثلة وتطبيقات تساعد على الفهم السريع.</p>
+          </div>
+          <div class="card">
+            <h3>دورة التحليل المالي</h3>
+            <p>تعلّم قراءة القوائم المالية وتحليل النسب والمؤشرات لتقييم الأداء واتخاذ القرار.</p>
+          </div>
+          <div class="card">
+            <h3>دورة Excel للمحاسبين</h3>
+            <p>تدريب عملي على الإكسل لإعداد الجداول والتقارير والتحليلات المالية بكفاءة عالية.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <div class="container">
+        <div class="section-title">
+          <h2>من نحن</h2>
+          <p>تعريف مختصر بالمركز ورسالتنا المهنية والتعليمية.</p>
+        </div>
+        <div class="about-box">
+          <p>نحن نقدم خدمات محاسبية متخصصة للأفراد والمنشآت، إلى جانب دورات تدريبية عملية تهدف إلى تأهيل الطلاب والمهتمين لسوق العمل. نركز على الدقة والوضوح والتطبيق العملي حتى يحصل العميل والطالب على قيمة حقيقية ونتائج ملموسة.</p>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <div class="container">
+        <div class="contact">
+          <h2>تواصل معنا</h2>
+          <p>للحجز والاستفسار عن الخدمات المحاسبية أو الدورات التعليمية، تواصل معنا عبر البيانات التالية.</p>
+          <p><strong>رقم التواصل / واتساب:</strong> 00967774616788</p>
+          <p><strong>البريد الإلكتروني:</strong> abdh.alsarem.711@gmail.com</p>
+          <a class="btn btn-primary" href="mailto:abdh.alsarem.711@gmail.com">راسلنا الآن</a>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer>
+    <div class="container">جميع الحقوق محفوظة © 2026 - المركز المحاسبي التعليمي</div>
+  </footer>
+</body>
+</html>
